@@ -1,0 +1,16 @@
+CREATE DATABASE minha_agenda;
+
+CREATE TABLE contatos (
+  id INT NOT NULL,
+  nome VARCHAR(255) NOT NULL,
+  data_nascimento date,
+  endereco VARCHAR(255),
+  telefone VARCHAR(255),
+  celular VARCHAR(255) NOT NULL
+);
+
+ALTER TABLE contatos
+ADD PRIMARY KEY (id);
+  
+ALTER TABLE contatos
+MODIFY id INT NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
